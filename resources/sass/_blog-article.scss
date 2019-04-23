@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300");
+
+@font-face {
+  font-family: "SIMPLIFICA";
+  src: url("https://raw.githubusercontent.com/icyavocado/pastey/master/public-vue/fonts/ttf/SIMPLIFICA%20Typeface.ttf")
+    format("truetype");
+}
+
+.banner-image {
+  min-height: 300px;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+.title {
+  font-family: "SIMPLIFICA", cursive;
+  font-size: 4em;
+  font-weight: 700;
+  background: white;
+}
+
+.publish-date {
+  font-family: "SIMPLIFICA", sans-serif;
+  font-size: 1.7em;
+}
+
+.content {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.2em;
+}
+
+.Home__nav-list {
+  display: flex;
+}
+
+.Home__nav-list > li {
+  text-align: center;
+  list-style: none;
+  width: 100px;
+}
+
+.Home__nav-list > li > a {
+  height: 50px;
+  line-height: 50px;
+  font-size: 2em;
+  text-decoration: none;
+  font-family: "SIMPLIFICA", cursive;
+  color: white;
+  position: relative;
+}
+
+.Home__nav-list > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.Home__nav-list > li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.Home__footer {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.logo {
+  font-size: 3em !important;
+  font-weight: 600;
+  font-family: "SIMPLIFICA", cursive;
+  color: white !important;
+}
+
+.Home__footer > .logo {
+  font-size: 1em;
+}
+
+.to-left {
+  margin-left: auto;
+}
+
+.angle-edge {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.angle-edge-top {
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+}
+
+.img-element div {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  background: #ddd;
+}
+
+.img-element div figcaption {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%);
+  padding: 10px;
+}
